@@ -1,16 +1,20 @@
-### Hi there 👋
+```java
+public class User {
 
-<!--
-**hesteren/hesteren** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    private final String name;
+    private final LocalDate birthdate;
+    private List<String> code;
+    private List<String> tools;
 
-Here are some ideas to get you started:
+    public User() {
+        this.name = "Max van Hesteren";
+        this.birthdate = LocalDate.of(2000, Month.SEPTEMBER, 2);
+        this.code = List.of("Java", "Python", "JavaScript", "HTML", "CSS");
+        this.tools = List.of("Docker", "Redux");
+    }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    private String welcome() {
+        return "Welcome to my GitHub profile!";
+    }
+}
+```
